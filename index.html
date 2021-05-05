@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <!-- 显示计算过程与结果的盒子 -->
+        <div class="show_box">
+            <!-- 结果 -->
+            <div class="result">
+                <span></span>
+            </div>
+            <!-- 过程 -->
+            <div class="show">
+                <span></span>
+            </div>
+        </div>
+        <!-- 输入按钮 -->
+        <div class="inputtedBtns">
+            <ul>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>/</li>
+            </ul>
+            <ul>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>*</li>
+            </ul>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>0</li>
+                <li id="clean">c</li>
+                <li>.</li>
+                <li>-</li>
+            </ul>
+            <!-- 等于按钮 -->
+            <button class="equals_btn">=</button>
+        </div>
+    </div>
+    <script src="./js/calculator.js"></script>
+    <script>
+        new Calculator().init();
+    </script>
+</body>
+</html>

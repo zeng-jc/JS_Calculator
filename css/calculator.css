@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+body{
+  background-color: #34495e;
+}
+#calculator{
+  width: 330px;
+  height: 480px;
+  margin: 100px auto;
+}
+#calculator span{
+  display: inline-block;
+  font-size: 32px;
+}
+#calculator .show_box{
+  background-color: #fff;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#calculator .show_box .result,#calculator .show_box .show{
+  text-align: right;
+  height: 50%;
+  margin: 15px;
+  overflow: hidden;
+}
+#calculator .show_box .result{
+  color: salmon;
+}
+
+#calculator .inputtedBtns{
+  position: relative;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 330px;
+  height: 330px;
+  color: #657b8f;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: linear-gradient(to bottom,#e6f5ff 1%,#fff 8%);
+  /* 设置文本不能选中 */
+  user-select: none;
+} 
+#calculator .inputtedBtns ul{
+  display: flex;
+  flex-grow: 1;
+  font-size: 25px;
+}
+#calculator .inputtedBtns li{
+  width: 25%;
+  line-height: calc(320px/4);
+}
+#calculator .inputtedBtns ul li:last-of-type{
+  color: #58b3ff;
+}
+#calculator .inputtedBtns ul:last-of-type #clean{
+  color: #ED4C67;
+}
+#calculator .inputtedBtns ul:last-of-type li:nth-child(3){
+  line-height: 70px;
+  color: #58b3ff;
+}
+#calculator .equals_btn{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #58b3ff;
+  color: #fff;
+  font-size: 30px;
+  outline: none;
+  position: absolute;
+  right: 50%;
+  bottom: -30px;
+  transform: translateX(50%);
+}
